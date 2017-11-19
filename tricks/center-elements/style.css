@@ -1,0 +1,91 @@
+#exampleA,
+#exampleB,
+#exampleC,
+#exampleD,
+#exampleE,
+#exampleF {
+  background-color: #666;
+  border: 5px solid #000;
+  height: 200px;
+}
+
+#elementA,
+#elementB,
+#elementC,
+#elementD,
+#elementE,
+#elementF {
+  background-color: #fff;
+  border: 5px solid #FF0000;
+}
+
+/* Horizontally */
+  /* Example A */
+#exampleA {
+  text-align: center;
+}
+
+#elementA {
+  display: inline-block;
+}
+  /* Example B */
+#elementB {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Vertically */
+  /*Example C*/
+#exampleC {
+  position: relative;
+}
+
+#exampleC::before {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  width: 1%;
+  vertical-align: middle;
+}
+
+#elementC {
+  display: inline-block;
+  vertical-align: middle;
+  width: 190px;
+}
+
+  /* Example D */
+#exampleD {
+  position: relative;
+}
+
+#elementD {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Example E and F */
+#elementE, #elementF {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Example E */
+#exampleE {
+  position: relative;
+}
+
+#elementE {
+  display: inline-block;
+}
+
+/* Example F */
+#exampleF {
+  position: relative;
+}
+
+#elementF {
+  display: block;
+}
