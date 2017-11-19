@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Position</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Position Property</h1>
+  <h3>Static:</h3>
+  <div id="staticExample">
+    <div id="staticBlock">
+      static block content: This is the default value, elements with this position
+      render in order.
+    </div>
+  </div>
+
+  <h3>Absolute:</h3>
+  <h4>Example 1 - When the first parent is the browser window.</h4>
+  <div id="absoluteExample1">
+    <div id="absoluteBlock1">
+      absolute block content 1: The element is positioned relative to its first positioned
+      (not static) ancestor element.
+    </div>
+  </div>
+
+  <h4>Example 2 - When we set the container as parent (position: relative).</h4>
+  <div id="absoluteExample2">
+    <div id="absoluteBlock2">
+      absolute block content 2: The element is positioned relative to its first positioned
+      (not static) ancestor element.
+    </div>
+  </div>
+
+  <h3>Sticky:</h3>
+  <div id="stickyExample">
+    <div id="stickyBlock">
+      sticky block content: the element is positioned based on the user's scroll position.
+      (Take into account browser version to support this feature)
+    </div>
+  </div>
+
+  <h3>Relative:</h3>
+  <div id="relativeExample">
+    <div id="relativeBlock">
+      relative block content: the element is positioned to its normal position.
+    </div>
+  </div>
+
+  <h3>Fixed:</h3>
+  <div id="fixedExample">
+    <div id="fixedBlock">
+      fixed block content: the element is positioned relative to the browser window.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+#staticExample,
+#absoluteExample1,
+#absoluteExample2,
+#stickyExample,
+#relativeExample,
+#fixedExample {
+  background-color: #666;
+  border: 5px solid #000;
+  height: 200px
+}
+
+#staticBlock,
+#absoluteBlock1,
+#absoluteBlock2,
+#stickyBlock,
+#relativeBlock,
+#fixedBlock {
+  background-color: #fff;
+  border: 5px solid #FF0000;
+}
+
+/* Static */
+#staticBlock {
+  position: static;
+  top: 30px;
+}
+
+/* Absolute */
+  /* Example 1*/
+#absoluteBlock1 {
+  position: absolute;
+  top: 370px;
+}
+
+  /* Example 2*/
+#absoluteExample2 {
+  position: relative;
+}
+
+#absoluteBlock2 {
+  position: absolute;
+  top: 30px;
+}
+
+/* Sticky */
+#stickyBlock {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+/* Relative */
+#relativeBlock {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+/* Fixed */
+#fixedBlock {
+  position: fixed;
+  top: 480px;
+}
